@@ -12,3 +12,8 @@ all: $(OBJS)
 
 clean:
 	rm -f $(OBJS) $(TARGET)
+
+push:
+	git push -u origin master
+
+.PHONY: all push clean
